@@ -13,7 +13,7 @@ admin_channel = 'C056R2WJ3G9'
 
 
 try:
-    i = 1/0
+
     result = client.conversations_history(channel=test_channel)
     conversation_history = result["messages"]
     for msg in conversation_history:
