@@ -1,0 +1,147 @@
+
+2023-04-06 00:12:23,427 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-04-06 00:12:28,239 - 127.0.0.1 - - [06/Apr/2023 00:12:28] "[35m[1mGET /static/resc/video.mp4 HTTP/1.1[0m" 206 -
+2023-04-06 00:12:31,554 - 127.0.0.1 - - [06/Apr/2023 00:12:31] "GET / HTTP/1.1" 200 -
+2023-04-06 00:12:31,580 - 127.0.0.1 - - [06/Apr/2023 00:12:31] "[35m[1mGET /static/resc/video.mp4 HTTP/1.1[0m" 206 -
+2023-04-06 00:12:38,597 - user https://www.linkedin.com/in/simon-freakley/ searched || RAM(77.046875MB)
+2023-04-06 00:12:38,597 - \__Scrape initiated successfully || RAM(77.15625MB)
+2023-04-06 00:12:49,906 - 127.0.0.1 - - [06/Apr/2023 00:12:49] "[35m[1mGET /static/resc/video.mp4 HTTP/1.1[0m" 206 -
+2023-04-06 00:12:50,885 - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dnsn/Desktop/flask_POST_NOFAIL/app.py", line 44, in search_start
+    result = scarpe_and_stat(link+'recent-activity/shares/')
+  File "/Users/dnsn/Desktop/flask_POST_NOFAIL/scrapeHandler.py", line 40, in scarpe_and_stat
+    un_pp_parent = driver.find_element(By.CSS_SELECTOR,'.ember-view.relative')
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 1248, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 425, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".ember-view.relative"}
+  (Session info: headless chrome=111.0.5563.146)
+Stacktrace:
+0   chromedriver                        0x0000000102952d3c chromedriver + 4222268
+1   chromedriver                        0x00000001028d98e8 chromedriver + 3725544
+2   chromedriver                        0x000000010258fda4 chromedriver + 277924
+3   chromedriver                        0x00000001025cb1b8 chromedriver + 520632
+4   chromedriver                        0x0000000102603618 chromedriver + 751128
+5   chromedriver                        0x00000001025bd8f0 chromedriver + 465136
+6   chromedriver                        0x00000001025be974 chromedriver + 469364
+7   chromedriver                        0x0000000102923788 chromedriver + 4028296
+8   chromedriver                        0x0000000102927c1c chromedriver + 4045852
+9   chromedriver                        0x000000010292dc98 chromedriver + 4070552
+10  chromedriver                        0x00000001029288d8 chromedriver + 4049112
+11  chromedriver                        0x00000001028ffd84 chromedriver + 3882372
+12  chromedriver                        0x0000000102946720 chromedriver + 4171552
+13  chromedriver                        0x0000000102946878 chromedriver + 4171896
+14  chromedriver                        0x000000010295a014 chromedriver + 4251668
+15  libsystem_pthread.dylib             0x000000018f2a9240 _pthread_start + 148
+16  libsystem_pthread.dylib             0x000000018f2a4024 thread_start + 8
+
+2023-04-06 00:12:50,892 - 127.0.0.1 - - [06/Apr/2023 00:12:50] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2023-04-09 22:26:24,622 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-04-09 22:26:49,359 - 127.0.0.1 - - [09/Apr/2023 22:26:49] "GET / HTTP/1.1" 200 -
+2023-04-09 22:26:49,415 - 127.0.0.1 - - [09/Apr/2023 22:26:49] "[35m[1mGET /static/resc/video.mp4 HTTP/1.1[0m" 206 -
+2023-04-09 22:26:49,448 - 127.0.0.1 - - [09/Apr/2023 22:26:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-04-09 22:26:51,085 - user https://www.linkedin.com/in/simon-freakley/ searched || RAM(61.875MB)
+2023-04-09 22:26:51,086 - \__Scrape initiated successfully || RAM(61.953125MB)
+2023-04-09 22:27:03,646 - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dnsn/Desktop/flask_POST_NOFAIL/app.py", line 44, in search_start
+    result = scarpe_and_stat(link+'recent-activity/shares/')
+  File "/Users/dnsn/Desktop/flask_POST_NOFAIL/scrapeHandler.py", line 40, in scarpe_and_stat
+    un_pp_parent = driver.find_element(By.CSS_SELECTOR,'.ember-view.relative')
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 1248, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 425, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".ember-view.relative"}
+  (Session info: headless chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x0000000100805670 chromedriver + 4298352
+1   chromedriver                        0x00000001007fdbbc chromedriver + 4266940
+2   chromedriver                        0x0000000100430758 chromedriver + 280408
+3   chromedriver                        0x000000010046bb38 chromedriver + 523064
+4   chromedriver                        0x00000001004a4080 chromedriver + 753792
+5   chromedriver                        0x000000010045e2d0 chromedriver + 467664
+6   chromedriver                        0x000000010045f354 chromedriver + 471892
+7   chromedriver                        0x00000001007c56c4 chromedriver + 4036292
+8   chromedriver                        0x00000001007c9c64 chromedriver + 4054116
+9   chromedriver                        0x00000001007d02d8 chromedriver + 4080344
+10  chromedriver                        0x00000001007ca970 chromedriver + 4057456
+11  chromedriver                        0x00000001007a18dc chromedriver + 3889372
+12  chromedriver                        0x00000001007e925c chromedriver + 4182620
+13  chromedriver                        0x00000001007e93b4 chromedriver + 4182964
+14  chromedriver                        0x00000001007f80f4 chromedriver + 4243700
+15  libsystem_pthread.dylib             0x000000018f2a9240 _pthread_start + 148
+16  libsystem_pthread.dylib             0x000000018f2a4024 thread_start + 8
+
+2023-04-09 22:27:03,652 - 127.0.0.1 - - [09/Apr/2023 22:27:03] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2023-04-09 22:27:33,834 -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-04-09 22:27:38,058 - 127.0.0.1 - - [09/Apr/2023 22:27:38] "GET / HTTP/1.1" 200 -
+2023-04-09 22:27:38,076 - 127.0.0.1 - - [09/Apr/2023 22:27:38] "[35m[1mGET /static/resc/video.mp4 HTTP/1.1[0m" 206 -
+2023-04-09 22:27:47,025 - user https://www.linkedin.com/in/simon-freakley/ searched || RAM(79.53125MB)
+2023-04-09 22:27:47,038 - \__Scrape initiated successfully || RAM(79.5625MB)
+2023-04-09 22:27:50,274 - 127.0.0.1 - - [09/Apr/2023 22:27:50] "[35m[1mGET /static/resc/video.mp4 HTTP/1.1[0m" 206 -
+2023-04-09 22:27:59,331 - Exception on / [POST]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/dnsn/Desktop/flask_POST_NOFAIL/app.py", line 44, in search_start
+    result = scarpe_and_stat(link+'recent-activity/shares/')
+  File "/Users/dnsn/Desktop/flask_POST_NOFAIL/scrapeHandler.py", line 40, in scarpe_and_stat
+    un_pp_parent = driver.find_element(By.CSS_SELECTOR,'.ember-view.relative')
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 1248, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 425, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".ember-view.relative"}
+  (Session info: chrome=112.0.5615.49)
+Stacktrace:
+0   chromedriver                        0x00000001045d5670 chromedriver + 4298352
+1   chromedriver                        0x00000001045cdbbc chromedriver + 4266940
+2   chromedriver                        0x0000000104200758 chromedriver + 280408
+3   chromedriver                        0x000000010423bb38 chromedriver + 523064
+4   chromedriver                        0x0000000104274080 chromedriver + 753792
+5   chromedriver                        0x000000010422e2d0 chromedriver + 467664
+6   chromedriver                        0x000000010422f354 chromedriver + 471892
+7   chromedriver                        0x00000001045956c4 chromedriver + 4036292
+8   chromedriver                        0x0000000104599c64 chromedriver + 4054116
+9   chromedriver                        0x00000001045a02d8 chromedriver + 4080344
+10  chromedriver                        0x000000010459a970 chromedriver + 4057456
+11  chromedriver                        0x00000001045718dc chromedriver + 3889372
+12  chromedriver                        0x00000001045b925c chromedriver + 4182620
+13  chromedriver                        0x00000001045b93b4 chromedriver + 4182964
+14  chromedriver                        0x00000001045c80f4 chromedriver + 4243700
+15  libsystem_pthread.dylib             0x000000018f2a9240 _pthread_start + 148
+16  libsystem_pthread.dylib             0x000000018f2a4024 thread_start + 8
+
+2023-04-09 22:27:59,336 - 127.0.0.1 - - [09/Apr/2023 22:27:59] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2023-04-09 22:32:04,342 - 127.0.0.1 - - [09/Apr/2023 22:32:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

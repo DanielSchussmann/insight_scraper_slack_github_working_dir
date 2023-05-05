@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Scrape Data</title>
+  <link href="{{ url_for('static',filename='styles/style.css') }}" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+  <div id="main">
+      <div id="dashboard">
+
+      <div id="head_block" class="blck">
+          <h4> PROFILE OVERVIEW</h4>
+        <div id="profile_pic">
+          <img id="imag" src="{{pp_url}}">
+        </div>
+        <div id="user_name"> {{user_name}} </div>
+        <div id="popularity">
+          <div id="followers">
+            <div id="follower_text">Followers: </div>
+            <div id="follower_count"> {{followers}}</div>
+          </div>
+
+          <div id="url" > Go to Profile</div>
+        </div>
+      </div>
+      <div id="body_block" class="blck">
+        <div id="avg_likes_block" class="stat_block">
+          <p>Average likes</p>
+          <div id="avg_likes" class="stat_point">{{avg_likes}}</div>
+        </div>
+        <div id="ttl_likes_block" class="stat_block">
+          <p>Total likes</p>
+          <div id="ttl_likes" class="stat_point">{{ttl_likes}}</div>
+        </div>
+        <div id="avg_comments_block" class="stat_block">
+          <p>Average comments</p>
+          <div id="avg_comments" class="stat_point">{{avg_comments}}</div>
+        </div>
+        <div id="ttl_comments_block" class="stat_block">
+          <p>Total comments</p>
+          <div id="ttl_comments" class="stat_point">{{ttl_comments}}</div>
+        </div>
+
+      </div>
+
+      <div id="foot_block" class="blck">
+      <h4> TOP POSTS </h4>
+        {% for table in tables %}
+
+            {{ table|safe }}
+
+        {% endfor %}
+      </div>
+
+    </div>
+
+  </div>
+
+     <script src="{{ url_for('static',filename='scripts/results.js') }}"></script>
+</body>
+</html>

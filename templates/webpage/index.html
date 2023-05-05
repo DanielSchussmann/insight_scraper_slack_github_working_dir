@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ting</title>
+  <link href="{{ url_for('static',filename='styles/style.css') }}" rel="stylesheet" type="text/css" />
+</head>
+@media print {
+   #main {position:relative; padding:0; height:1px; overflow:visible;}
+   #printarea {position:absolute; width:100%; top:0; padding:0; margin:-1px;}
+}
+
+<body>
+  <div id="head_band"></div>
+
+  <div id="main">
+
+    <div id="back_btn" onclick="dash_invis()">
+      <img id="back_icon" src="{{ url_for('static',filename='resc/back_simple.svg') }}">
+    </div>
+    <div id='Search'>
+        <form method="POST" action="/passing">
+      <input id='search_txt' name='search_txt' value="" placeholder="Search for user" autocomplete="off" type="text">
+      <input type='Submit' id='search_bttn' name='search_bttn' value='Search' onclick="search_invis()">
+        </form>
+    </div>
+
+    <div id="dashboard">
+      <div id="head_block" class="blck">
+        <div id="profile_pic">
+          <img id="imag" src="{{pp_url}}">
+        </div>
+        <div id="user_name"> {{user_name}} </div>
+        <div id="popularity">
+          <div id="followers">
+            <div id="follower_text">Followers: </div>
+            <div id="follower_count"> {{followers}}</div>
+          </div>
+
+          <div id="url" href="{{profile_link}}"> Go to Profile</div>
+        </div>
+      </div>
+      <div id="body_block" class="blck">
+        <div id="avg_likes_block" class="stat_block">
+          <p>Average likes</p>
+          <div id="avg_likes" class="stat_point">{{avg_likes}}</div>
+        </div>
+        <div id="ttl_likes_block" class="stat_block">
+          <p>Total likes</p>
+          <div id="ttl_likes" class="stat_point">{{ttl_likes}}</div>
+        </div>
+        <div id="avg_comments_block" class="stat_block">
+          <p>Average comments</p>
+          <div id="avg_comments" class="stat_point">{{avg_comments}}</div>
+        </div>
+        <div id="ttl_comments_block" class="stat_block">
+          <p>Total comments</p>
+          <div id="ttl_comments" class="stat_point">{{ttl_comments}}</div>
+        </div>
+
+      </div>
+      <div id="foot_block" class="blck">
+        <table id="post_table">
+          <tr>
+            <th>Calender week</th>
+            <th>Title</th>
+            <th>Likes</th>
+            <th>Comments</th>
+            <th>URL</th>
+          </tr>
+
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="{{ url_for('static',filename='scripts/script.js') }}"></script>
+</body>
+
+</html>

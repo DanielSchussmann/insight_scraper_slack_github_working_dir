@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ting</title>
+  <!--<link href="{{ url_for('static',filename='styles/style.css') }}" rel="stylesheet" type="text/css" />-->
+    <style>
+*{margin:0px;padding:0px; font-family: Arial, Helvetica, sans-serif;}
+
+body{height:100vh}
+#main{display:flex;
+  align-items:center;
+  justify-content:center;
+    flex-direction: column;}
+
+
+#back_btn{
+  visibility: hidden ;
+  pointer-events: none;}
+#back_btn:hover{cursor:pointer;background-color:#1886EE;}
+
+#Search{
+  position:absolute;
+  top:100px;
+  visibility:visible;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:fit-content;
+  justify-self:center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+#form_wrapper{display:flex;
+  flex-direction: row;}
+#search_txt{height:35px;width:310px; border:none;decoration:none}
+#search_txt:focus {outline:none;}
+
+#search_bttn{background-color:#1873C9;
+  width:110px;
+  border:none;
+  height:35px;
+  border-radius:1px;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+#search_bttn:hover{cursor:pointer;background-color:#1886EE;}
+
+
+
+h4{text-align:center; color:#1873C9;font-weight: bold;}
+
+    </style>
+</head>
+
+<body>
+  <div id="head_band"></div>
+
+  <div id="main">
+
+    <div id="back_btn">
+
+        <video width="500" height="350" id="vid" autoplay muted>
+          <source src="{{ url_for('static',filename='resc/video.mp4') }}" type="video/mp4">
+        </video>
+    </div>
+
+
+    <div id='Search'>
+        <form id ="form_wrapper" method="POST" action="/">
+      <input id='search_txt' name='search_txt' value="" placeholder="Search for user" autocomplete="off" type="text">
+      <input type='submit' id='search_bttn' name='search_bttn' value='Process' onclick="search_invis()">
+        </form>
+    </div>
+
+  </div>
+  <script>
+
+search = document.getElementById("Search");
+//dashboard = document.getElementById("dashboard");
+back_btn = document.getElementById("back_btn");
+vid = document.getElementById("vid");
+//Enables enter to be used as search execute
+document.getElementById("search_txt")
+  .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+      document.getElementById("search_bttn").click();
+    }
+  });
+
+      function search_invis() {
+  search.style.visibility = "hidden";
+  setTimeout(10)
+     back_btn.style.visibility = "visible";
+  search.value = "";
+}
+
+function dash_invis() {
+  search.style.visibility = "visible";
+  dashboard.style.visibility = "hidden";
+  back_btn.style.visibility = "hidden";
+}
+  </script>
+  <!--<script src="{{ url_for('static',filename='scripts/script.js') }}"></script>-->
+</body>
+
+</html>
