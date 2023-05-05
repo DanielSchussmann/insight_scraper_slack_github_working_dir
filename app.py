@@ -1,14 +1,11 @@
-from secrets import *
-import datetime
-import json
+from static.secrets import *
 from scrapeHandler import *
 #pip3 install slackclient
 import slack
 from communicationHandler import *
-import jinja2
 from jinja2 import Template
 
-client = slack.WebClient(token=tolkin)
+client = slack.WebClient(token=slack_token)
 
 
 try:
