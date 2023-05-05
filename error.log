@@ -2985,3 +2985,39 @@ Traceback (most recent call last):
   File "/Users/dnsn/Desktop/Insight_scrape_SLACK_solution/scrapeHandler.py", line 36, in scarpe_and_stat
     time.sleep(6)
 KeyboardInterrupt
+2023-05-05 00:09:14,465 - Uncaught exception
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/app.py", line 4, in <module>
+    from scrapeHandler import *
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 7, in <module>
+    from stats import *
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/stats.py", line 1, in <module>
+    import pandas as pd
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/pandas/__init__.py", line 16, in <module>
+    raise ImportError(
+ImportError: Unable to import required dependencies:
+numpy: cannot import name randbits
+2023-05-05 00:10:30,673 - Uncaught exception
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/app.py", line 4, in <module>
+    from scrapeHandler import *
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 7, in <module>
+    from stats import *
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/stats.py", line 1, in <module>
+    import pandas as pd
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/pandas/__init__.py", line 16, in <module>
+    raise ImportError(
+ImportError: Unable to import required dependencies:
+numpy: cannot import name randbits
+2023-05-05 00:11:19,724 - Uncaught exception
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/app.py", line 4, in <module>
+    from scrapeHandler import *
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 7, in <module>
+    from stats import *
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/stats.py", line 1, in <module>
+    import pandas as pd
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/pandas/__init__.py", line 16, in <module>
+    raise ImportError(
+ImportError: Unable to import required dependencies:
+numpy: cannot import name randbits

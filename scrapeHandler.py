@@ -9,6 +9,7 @@ from stats import *
 from cookieHandler import *
 from selenium.webdriver.common.by import By
 import pandas as pd
+import numpy as np
 
 post_load_speed = 3
 page_load_speed = 3
@@ -84,7 +85,7 @@ def scarpe_and_stat(link,bypass = False):
         #time.sleep(2)
         #posts_itt.append(group[-11:-1])
 
-        if re.search(r'\b3mo\b', check_yr) or re.search(r'\b4mo\b', check_yr) or re.search(r'\b6mo\b', check_yr):
+        if re.search(r'\b[4-9]+mo\b', check_yr) or re.search(r'\b[1-9]+yr\b', check_yr):
             driver.set_window_size(700, 1300)
             for x in range(0,4):
                 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")

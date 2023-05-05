@@ -1,3 +1,4 @@
+from secrets import *
 import datetime
 import json
 from scrapeHandler import *
@@ -7,13 +8,10 @@ from communicationHandler import *
 import jinja2
 from jinja2 import Template
 
-client = slack.WebClient(token='xoxb-5125654014036-5146891840544-2WGECylsIlXlq00fenhF5vKy')
-test_channel = 'C053PKBHDB6'
-admin_channel = 'C056R2WJ3G9'
+client = slack.WebClient(token=tolkin)
 
 
 try:
-
     result = client.conversations_history(channel=test_channel)
     conversation_history = result["messages"]
     for msg in conversation_history:
@@ -25,6 +23,7 @@ try:
 
                 if  check != True:
                     client.chat_postMessage(channel=test_channel, thread_ts=msg['ts'], text=f'{check}')
+                    break
 
                 try:
                     #if msg['text'][0] !='h':
@@ -34,7 +33,7 @@ try:
 
                     com('user {} searched'.format(link))
                     com('\__Scrape initiated successfully')
-                    result = scarpe_and_stat(link + 'recent-activity/shares/')
+                    result = scarpe_and_stat(link + 'recent-activity/all/')
 
                     with open('templates/webpage/results_style_in_html.html.jinja2') as file_:
                         template = Template(file_.read())
@@ -64,4 +63,6 @@ try:
                     client.chat_postMessage(channel=test_channel, thread_ts=msg['ts'], text=f'Sooowwy >.< something went wrong \n {e}')
 
 except  Exception as e:
+    print(e)
     client.chat_postMessage(channel=admin_channel, text=f'~FULL FAILURE~ \n {e}')
+
