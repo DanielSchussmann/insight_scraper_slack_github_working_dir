@@ -9,7 +9,7 @@ from stats import *
 from cookieHandler import *
 from selenium.webdriver.common.by import By
 import pandas as pd
-import numpy as np
+
 
 post_load_speed = 3
 page_load_speed = 3
@@ -104,7 +104,7 @@ def scarpe_and_stat(link,bypass = False):
                 except:
                     try:
                         com(post.find_elements(By.TAG_NAME, 'div')[0])
-                        urn = post.find_elements(By.TAG_NAME, 'div')[0].get_attribute('data-urn')
+                        urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
                         com('CURRENT URN' + str(urn))
 
                         pre_date =  post.find_element(By.CSS_SELECTOR,'.update-components-text-view.white-space-pre-wrap.break-words') #re.findall(r"\d+[hwdmy]o?", post.get_attribute('innerHTML'))[0] #
