@@ -1,4 +1,4 @@
-from static.secrets import *
+from internal_secrets import *
 from scrapeHandler import *
 #pip3 install slackclient
 import slack

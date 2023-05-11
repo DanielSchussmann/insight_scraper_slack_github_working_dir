@@ -57,20 +57,7 @@ def scarpe_and_stat(link,bypass = False):
         if len(posts_itt) == 0:
             posts_itt.append(group[-11:-1])
 
-        try:
-            driver.execute_script("window.scrollTo(0, 0);")
-            com('TOP scroll OK')
-            # driver.execute_script("arguments[0].scrollIntoView(true);", button
-            time.sleep(2)
-            com('slept')
-            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-            com('BOT scroll OK')
-            # button.click()
-            time.sleep(2)
-        except Exception as e1:
-            com(e1,typ='ERROR')
-            pass
+
 
 
 
@@ -107,7 +94,7 @@ def scarpe_and_stat(link,bypass = False):
                         urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
                         com('CURRENT URN' + str(urn))
 
-                        pre_date =  post.find_element(By.CSS_SELECTOR,'.update-components-text-view.white-space-pre-wrap.break-words') #re.findall(r"\d+[hwdmy]o?", post.get_attribute('innerHTML'))[0] #
+                        pre_date =  post.find_element(By.CSS_SELECTOR,'.update-components-text-view.break-words') #re.findall(r"\d+[hwdmy]o?", post.get_attribute('innerHTML'))[0] #
                         date_wrap = pre_date.find_elements(By.TAG_NAME,'span')[1].get_attribute('innerHTML')
 
                         com('\_date pre: {}'.format(date_wrap))
@@ -174,6 +161,21 @@ def scarpe_and_stat(link,bypass = False):
             com("postdata reached")
             break
 
+
+        try:
+            driver.execute_script("window.scrollTo(0, 0);")
+            com('TOP scroll OK')
+            # driver.execute_script("arguments[0].scrollIntoView(true);", button
+            time.sleep(2)
+            com('slept')
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            com('BOT scroll OK')
+            # button.click()
+            time.sleep(2)
+        except Exception as e1:
+            com(e1,typ='ERROR')
+            pass
 
 
     # full twelve months
