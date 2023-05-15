@@ -5,6 +5,7 @@ import slack
 from communicationHandler import *
 from jinja2 import Template
 
+#check if update
 client = slack.WebClient(token=slack_token)
 
 
