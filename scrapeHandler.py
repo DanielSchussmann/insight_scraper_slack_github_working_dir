@@ -154,7 +154,7 @@ def scarpe_and_stat(link,bypass = False):
                     com(link_to_profile)
 
             post_data = pd.DataFrame(post_data, columns=['date', 'likes', 'comments', 'reposts', 'link'])
-            post_data = post_data[post_data['date']<=3]
+            post_data = post_data[post_data['date']<=2]
             com("postdata reached")
             break
 
