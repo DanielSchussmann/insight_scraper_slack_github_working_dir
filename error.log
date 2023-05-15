@@ -12714,3 +12714,2100 @@ Stacktrace:
 17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
 18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
 
+2023-05-15 11:08:10,082 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:08:10,304 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:08:10,322 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:08:10,339 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:08:10,686 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:08:10,886 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:08:11,114 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:08:11,131 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:08:11,238 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:08:11,251 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:08:11,476 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:08:11,490 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:08:11,594 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:08:11,607 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x00000001025fb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001025f3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001022309d4 chromedriver + 281044
+3   chromedriver                        0x000000010226ba34 chromedriver + 522804
+4   chromedriver                        0x00000001022611cc chromedriver + 479692
+5   chromedriver                        0x00000001022a27e4 chromedriver + 747492
+6   chromedriver                        0x000000010225f98c chromedriver + 473484
+7   chromedriver                        0x000000010226098c chromedriver + 477580
+8   chromedriver                        0x00000001025ba900 chromedriver + 3991808
+9   chromedriver                        0x00000001025be354 chromedriver + 4006740
+10  chromedriver                        0x00000001025be940 chromedriver + 4008256
+11  chromedriver                        0x00000001025c433c chromedriver + 4031292
+12  chromedriver                        0x00000001025bef34 chromedriver + 4009780
+13  chromedriver                        0x0000000102597490 chromedriver + 3847312
+14  chromedriver                        0x00000001025dc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001025dcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001025ed230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:24,576 - Uncaught exception
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/app.py", line 32, in <module>
+    result = scarpe_and_stat(link + 'recent-activity/all/')
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 26, in scarpe_and_stat
+    xdrive.injectCookies()
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/driverHandler.py", line 77, in injectCookies
+    time.sleep(1)
+KeyboardInterrupt
+2023-05-15 11:15:39,259 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:39,479 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:39,496 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:39,512 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:39,879 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:40,079 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:40,350 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:40,367 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:40,524 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:40,538 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:40,752 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:40,765 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:40,889 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:40,911 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+2023-05-15 11:15:41,315 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 103, in scarpe_and_stat
+    urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  "}
+  (Session info: headless chrome=113.0.5672.92)
+Stacktrace:
+0   chromedriver                        0x0000000100de78ac chromedriver + 4257964
+1   chromedriver                        0x0000000100ddff40 chromedriver + 4226880
+2   chromedriver                        0x0000000100a1c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000100a57a34 chromedriver + 522804
+4   chromedriver                        0x0000000100a4d1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a8e7e4 chromedriver + 747492
+6   chromedriver                        0x0000000100a4b98c chromedriver + 473484
+7   chromedriver                        0x0000000100a4c98c chromedriver + 477580
+8   chromedriver                        0x0000000100da6900 chromedriver + 3991808
+9   chromedriver                        0x0000000100daa354 chromedriver + 4006740
+10  chromedriver                        0x0000000100daa940 chromedriver + 4008256
+11  chromedriver                        0x0000000100db033c chromedriver + 4031292
+12  chromedriver                        0x0000000100daaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d83490 chromedriver + 3847312
+14  chromedriver                        0x0000000100dc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100dc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100dd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+

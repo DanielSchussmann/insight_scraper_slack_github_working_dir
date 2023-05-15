@@ -88,7 +88,7 @@ def scarpe_and_stat(link,bypass = False):
                 #driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                 time.sleep(1)
 
-            posts = driver.find_elements(By.CSS_SELECTOR, '.profile-creator-shared-feed-update__container')[:-1]
+            posts = driver.find_elements(By.CSS_SELECTOR, '.profile-creator-shared-feed-update__container')
 
             com('Len of post push ' + str(len(posts)))
 
