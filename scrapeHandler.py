@@ -7,22 +7,26 @@ from communicationHandler import *
 from stats import *
 #import speedtest for checking sleep time
 from cookieHandler import *
-from selenium.webdriver.common.by import By
 import pandas as pd
-
+import re
 
 post_load_speed = 3
 page_load_speed = 3
-
+timeout_trigger = 240
 
 def scarpe_and_stat(link,bypass = False):
 #-------------------------------DRIVER-SETUP-------------------------------
+    xdrive = DRIVER()
+    xdrive.set_standard_options()
+    xdrive.start()
+    driver = xdrive.driver
+
 
 #-------------------------------INJECT-COOKIES-------------------------------
-    injectCookies()
+    xdrive.injectCookies()
 
 #-------------------------------INJECT-COOKIES-------------------------------
-    time.sleep(2)
+    time.sleep(1)
 
 
     if bypass == True:
@@ -34,7 +38,7 @@ def scarpe_and_stat(link,bypass = False):
         time.sleep(5)
     else:
         driver.get(link)
-        time.sleep(6)
+        time.sleep(3)
 
 
 
@@ -50,7 +54,7 @@ def scarpe_and_stat(link,bypass = False):
     global post_data,posts_itt
     post_data = []# pd.DataFrame(columns=['date','likes','comments','reposts'])
     posts_itt = []
-
+    init_time = time.time()
     while True:
         group = driver.find_elements(By.CSS_SELECTOR, '.ember-view.occludable-update')
         com(len(group))
@@ -71,8 +75,13 @@ def scarpe_and_stat(link,bypass = False):
         #check_yr = 'yr'
         #time.sleep(2)
         #posts_itt.append(group[-11:-1])
+        loop_time = time.time()
+        if re.search(r'\b[3-9]+mo\b', check_yr) or re.search(r'\b[1-9]+yr\b',check_yr) or loop_time > init_time + timeout_trigger:
+            if loop_time > init_time + timeout_trigger:
+                 timeout = True
 
-        if re.search(r'\b[4-9]+mo\b', check_yr) or re.search(r'\b[1-9]+yr\b', check_yr):
+            else:
+                timeout = False
             driver.set_window_size(700, 1300)
             for x in range(0,4):
                 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -81,7 +90,7 @@ def scarpe_and_stat(link,bypass = False):
 
             posts = driver.find_elements(By.CSS_SELECTOR, '.profile-creator-shared-feed-update__container')[:-1]
 
-            com('Len of post push' + str(len(posts)))
+            com('Len of post push ' + str(len(posts)))
 
             for post in posts: #posts_itt[0]: #posts[:-5]:
                 try:
@@ -104,21 +113,9 @@ def scarpe_and_stat(link,bypass = False):
 
                         else: date_wrap = 999
 
-                        """com('\_date pre: {}'.format(date_wrap))
-                        date_wrap = re.findall(r"\d+[hwdmy]o?",date_wrap)[0]
-    
-                        if 'd' or 'h' or 'w' in date_wrap: date_wrap = 1
-                        elif 'mo' in date_wrap: date_wrap = int(date_wrap.rstrip('mo'))# int(date_wrap[:-2])
-                        else: date_wrap = 99"""
-
                         com('\_date post: {}'.format(date_wrap))
                         likes, kommentare, reposts = 0, 0, 0
                         like_com_rep_wrap = post.find_elements(By.CSS_SELECTOR, 'li button span')
-                        #like_el = post.find_element(By.CSS_SELECTOR,'.social-details-social-counts__reactions-count').get_attribute('innerHTML')
-                        #likes= int(re.findall('[0-9]+',post.find_element(By.CSS_SELECTOR,like_el))[0])
-                        #com('\_likes: '+str(likes))
-
-
 
 
                         likes = int(post.find_element(By.CSS_SELECTOR,'.social-details-social-counts__reactions-count').get_attribute('innerHTML').replace(',',''))
@@ -191,21 +188,12 @@ def scarpe_and_stat(link,bypass = False):
 
 
 
-    results = {'user_name':user_name,'followers':followers,'pp_url':pp_url} | stated_data
+    results = {'user_name':user_name,'followers':followers,'pp_url':pp_url,'timeout':timeout} | stated_data
 
 
     com('\_SCRAPED successfully')
-    #driver.quit()
+    xdrive.stop()
     return results
 
 
-def non_static_xpath():
-    return ""
-
-def date_parse(date):
-    if date[-1]=='d':
-        parsed_date=int('0.0')
-
-
-    return parsed_date
 

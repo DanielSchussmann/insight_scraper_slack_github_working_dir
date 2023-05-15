@@ -1,4 +1,4 @@
-from driverHandler import *
+"""from driverHandler import *
 import pickle
 import time
 from communicationHandler import *
@@ -53,7 +53,7 @@ def minimalInjection():
 
 
 
-
+"""
 
 #getCookies()
 #injectCookies()

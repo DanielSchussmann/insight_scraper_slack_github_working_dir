@@ -8,6 +8,7 @@ from jinja2 import Template
 client = slack.WebClient(token=slack_token)
 
 
+
 try:
     result = client.conversations_history(channel=test_channel)
     conversation_history = result["messages"]
@@ -20,11 +21,9 @@ try:
 
                 if  check != True:
                     client.chat_postMessage(channel=test_channel, thread_ts=msg['ts'], text=f'{check}')
-                    break
+                    continue
 
                 try:
-                    #if msg['text'][0] !='h':
-                    #   raise client.chat_postMessage(channel=test_channel, thread_ts=msg['ts'], text='input formatting is false')
 
                     print(link, type(link))
 
@@ -53,13 +52,18 @@ try:
                     save_html = open(file_name, "w")
                     save_html.write(render)
                     save_html.close()
-                    client.files_upload(channels=test_channel, initial_comment=result['user_name'] + "'s KPI",thread_ts=msg['ts'],file=file_name)
+                    client.files_upload(channels=test_channel,
+                                        initial_comment=result['user_name'] + "'s KPI" if result['timeout'] == False
+                                        else result['user_name'] + f"'s KPI \n NOTE: Timeout after {timeout_trigger}s. This means there might be data missing! contact admin if KPI is insufficient",
+                                        thread_ts=msg['ts'],
+                                        file=file_name)
                     #client.chat_postMessage(channel=test_channel, thread_ts=msg['ts'], text='HELLOU')
 
                 except  Exception as e:
-                    client.chat_postMessage(channel=test_channel, thread_ts=msg['ts'], text=f'Sooowwy >.< something went wrong \n {e}')
-
+                    client.chat_postMessage(channel=test_channel, thread_ts=msg['ts'], text=f'>.< something went wrong \n {e}')
 except  Exception as e:
     print(e)
     client.chat_postMessage(channel=admin_channel, text=f'~FULL FAILURE~ \n {e}')
+
+
 
