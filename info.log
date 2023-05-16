@@ -5852,3 +5852,388 @@
 2023-05-15 11:15:41,320 - postdata reached || RAM(61.34375MB)
 2023-05-15 11:15:41,323 - 3 || RAM(62.640625MB)
 2023-05-15 11:15:41,324 - \_SCRAPED successfully || RAM(63.265625MB)
+2023-05-16 06:36:03,085 - user https://www.linkedin.com/in/tobiasrappers/ searched || RAM(80.453125MB)
+2023-05-16 06:36:03,087 - \__Scrape initiated successfully || RAM(80.46875MB)
+2023-05-16 06:36:06,080 - \__Cookies injected successfully || RAM(91.78125MB)
+2023-05-16 06:36:12,422 - \__Direct info collected successfully || RAM(68.765625MB)
+2023-05-16 06:36:12,930 - 15 || RAM(68.890625MB)
+2023-05-16 06:36:13,439 - ('Reggexed time', ['4d', '4d', '5d', '5d', '1w', '1w', '2w', '2w', '3w', '3w', '1mo', '1mo', '1mo', '1mo', '2mo', '2mo', '2mo', '2mo', '2mo', '2mo', '3mo', '3mo', '3mo', '3mo', '3mo', '3mo', '3mo', '3mo', '3mo', '3mo', '3mo', '3mo', '4mo', '4mo', '4mo', '4mo', '4mo', '4mo', '5mo', '5mo', '5mo', '5mo', '5mo', '5mo']) || RAM(69.390625MB)
+2023-05-16 06:36:17,741 - Len of post push 40 || RAM(69.484375MB)
+2023-05-16 06:36:17,762 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_725")> || RAM(69.484375MB)
+2023-05-16 06:36:17,774 - CURRENT URNurn:li:activity:7062476519641600000 || RAM(69.5MB)
+2023-05-16 06:36:17,792 - \_date pre: 4d • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.578125MB)
+2023-05-16 06:36:17,792 - \_date post: 1 || RAM(69.578125MB)
+2023-05-16 06:36:17,809 - 140 || RAM(69.578125MB)
+2023-05-16 06:36:17,853 - \_comments: 
+            2 comments
+           || RAM(69.59375MB)
+2023-05-16 06:36:17,858 - \_reposts:
+            4 reposts
+           || RAM(69.59375MB)
+2023-05-16 06:36:17,892 - https://www.linkedin.com/feed/update/urn:li:activity:7062476519641600000 || RAM(69.59375MB)
+2023-05-16 06:36:17,902 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_770")> || RAM(69.59375MB)
+2023-05-16 06:36:17,911 - CURRENT URNurn:li:activity:7062303064443011072 || RAM(69.59375MB)
+2023-05-16 06:36:17,925 - \_date pre: 5d • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.59375MB)
+2023-05-16 06:36:17,926 - \_date post: 1 || RAM(69.59375MB)
+2023-05-16 06:36:17,940 - 147 || RAM(69.59375MB)
+2023-05-16 06:36:17,972 - \_comments: 
+            9 comments
+           || RAM(69.59375MB)
+2023-05-16 06:36:17,977 - \_reposts:
+            1 repost
+           || RAM(69.59375MB)
+2023-05-16 06:36:18,013 - https://www.linkedin.com/feed/update/urn:li:activity:7062303064443011072 || RAM(69.71875MB)
+2023-05-16 06:36:18,023 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_809")> || RAM(69.71875MB)
+2023-05-16 06:36:18,033 - CURRENT URNurn:li:activity:7059764269461991425 || RAM(69.71875MB)
+2023-05-16 06:36:18,046 - \_date pre: 1w • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.71875MB)
+2023-05-16 06:36:18,047 - \_date post: 1 || RAM(69.71875MB)
+2023-05-16 06:36:18,060 - 106 || RAM(69.71875MB)
+2023-05-16 06:36:18,086 - \_comments: 
+            1 comment
+           || RAM(69.71875MB)
+2023-05-16 06:36:18,091 - \_reposts:
+            1 repost
+           || RAM(69.71875MB)
+2023-05-16 06:36:18,121 - https://www.linkedin.com/feed/update/urn:li:activity:7059764269461991425 || RAM(69.71875MB)
+2023-05-16 06:36:18,130 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_848")> || RAM(69.71875MB)
+2023-05-16 06:36:18,138 - CURRENT URNurn:li:activity:7056877315368071168 || RAM(69.71875MB)
+2023-05-16 06:36:18,151 - \_date pre: 2w • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.71875MB)
+2023-05-16 06:36:18,151 - \_date post: 1 || RAM(69.71875MB)
+2023-05-16 06:36:18,163 - 350 || RAM(69.71875MB)
+2023-05-16 06:36:18,185 - \_comments: 
+            47 comments
+           || RAM(69.71875MB)
+2023-05-16 06:36:18,189 - \_reposts:
+            3 reposts
+           || RAM(69.71875MB)
+2023-05-16 06:36:18,218 - https://www.linkedin.com/feed/update/urn:li:activity:7056877315368071168 || RAM(69.71875MB)
+2023-05-16 06:36:18,227 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_892")> || RAM(69.71875MB)
+2023-05-16 06:36:18,235 - CURRENT URNurn:li:activity:7056145868399251456 || RAM(69.71875MB)
+2023-05-16 06:36:18,247 - \_date pre: 3w • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.71875MB)
+2023-05-16 06:36:18,247 - \_date post: 1 || RAM(69.71875MB)
+2023-05-16 06:36:18,259 - 20 || RAM(69.71875MB)
+2023-05-16 06:36:18,285 - \_comments: 
+            1 comment
+           || RAM(69.71875MB)
+2023-05-16 06:36:18,315 - https://www.linkedin.com/feed/update/urn:li:activity:7056145868399251456 || RAM(69.71875MB)
+2023-05-16 06:36:18,324 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_930")> || RAM(69.71875MB)
+2023-05-16 06:36:18,333 - CURRENT URNurn:li:activity:7049991690815696896 || RAM(69.71875MB)
+2023-05-16 06:36:18,345 - \_date pre: 1mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.71875MB)
+2023-05-16 06:36:18,346 - \_date post: 1 || RAM(69.71875MB)
+2023-05-16 06:36:18,358 - 75 || RAM(69.71875MB)
+2023-05-16 06:36:18,383 - \_comments: 
+            8 comments
+           || RAM(69.71875MB)
+2023-05-16 06:36:18,414 - https://www.linkedin.com/feed/update/urn:li:activity:7049991690815696896 || RAM(69.71875MB)
+2023-05-16 06:36:18,423 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_976")> || RAM(69.71875MB)
+2023-05-16 06:36:18,431 - CURRENT URNurn:li:activity:7048904546290429952 || RAM(69.71875MB)
+2023-05-16 06:36:18,443 - \_date pre: 1mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.71875MB)
+2023-05-16 06:36:18,443 - \_date post: 1 || RAM(69.71875MB)
+2023-05-16 06:36:18,456 - 96 || RAM(69.71875MB)
+2023-05-16 06:36:18,478 - \_comments: 
+            36 comments
+           || RAM(69.71875MB)
+2023-05-16 06:36:18,482 - \_reposts:
+            1 repost
+           || RAM(69.71875MB)
+2023-05-16 06:36:18,513 - https://www.linkedin.com/feed/update/urn:li:activity:7048904546290429952 || RAM(69.71875MB)
+2023-05-16 06:36:18,522 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1034")> || RAM(69.71875MB)
+2023-05-16 06:36:18,538 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1086")> || RAM(69.921875MB)
+2023-05-16 06:36:18,546 - CURRENT URNurn:li:activity:7036248424253419521 || RAM(69.921875MB)
+2023-05-16 06:36:18,558 - \_date pre: 2mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.921875MB)
+2023-05-16 06:36:18,559 - \_date post: 2 || RAM(69.921875MB)
+2023-05-16 06:36:18,571 - 30 || RAM(69.921875MB)
+2023-05-16 06:36:18,593 - \_comments: 
+            1 comment
+           || RAM(69.921875MB)
+2023-05-16 06:36:18,623 - https://www.linkedin.com/feed/update/urn:li:activity:7036248424253419521 || RAM(69.921875MB)
+2023-05-16 06:36:18,632 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1152")> || RAM(69.921875MB)
+2023-05-16 06:36:18,641 - CURRENT URNurn:li:activity:7032253557537918976 || RAM(69.921875MB)
+2023-05-16 06:36:18,653 - \_date pre: 3mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.921875MB)
+2023-05-16 06:36:18,653 - \_date post: 3 || RAM(69.921875MB)
+2023-05-16 06:36:18,665 - 59 || RAM(69.921875MB)
+2023-05-16 06:36:18,691 - \_comments: 
+            8 comments
+           || RAM(69.921875MB)
+2023-05-16 06:36:18,695 - \_reposts:
+            2 reposts
+           || RAM(69.921875MB)
+2023-05-16 06:36:18,726 - https://www.linkedin.com/feed/update/urn:li:activity:7032253557537918976 || RAM(69.921875MB)
+2023-05-16 06:36:18,735 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1216")> || RAM(69.921875MB)
+2023-05-16 06:36:18,743 - CURRENT URNurn:li:activity:7031517459639619584 || RAM(69.921875MB)
+2023-05-16 06:36:18,755 - \_date pre: 3mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.921875MB)
+2023-05-16 06:36:18,756 - \_date post: 3 || RAM(69.921875MB)
+2023-05-16 06:36:18,768 - 70 || RAM(69.921875MB)
+2023-05-16 06:36:18,793 - \_comments: 
+            2 comments
+           || RAM(69.921875MB)
+2023-05-16 06:36:18,822 - https://www.linkedin.com/feed/update/urn:li:activity:7031517459639619584 || RAM(69.921875MB)
+2023-05-16 06:36:18,832 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1279")> || RAM(69.9375MB)
+2023-05-16 06:36:18,840 - CURRENT URNurn:li:activity:7030785133427220480 || RAM(69.9375MB)
+2023-05-16 06:36:18,852 - \_date pre: 3mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.9375MB)
+2023-05-16 06:36:18,852 - \_date post: 3 || RAM(69.9375MB)
+2023-05-16 06:36:18,864 - 162 || RAM(69.9375MB)
+2023-05-16 06:36:18,898 - \_comments: 
+            6 comments
+           || RAM(69.9375MB)
+2023-05-16 06:36:18,903 - \_reposts:
+            1 repost
+           || RAM(69.9375MB)
+2023-05-16 06:36:18,933 - https://www.linkedin.com/feed/update/urn:li:activity:7030785133427220480 || RAM(69.9375MB)
+2023-05-16 06:36:18,942 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1350")> || RAM(69.9375MB)
+2023-05-16 06:36:18,950 - CURRENT URNurn:li:activity:7027181713017458688 || RAM(69.9375MB)
+2023-05-16 06:36:18,962 - \_date pre: 3mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.9375MB)
+2023-05-16 06:36:18,962 - \_date post: 3 || RAM(69.9375MB)
+2023-05-16 06:36:18,974 - 118 || RAM(69.9375MB)
+2023-05-16 06:36:18,995 - \_comments: 
+            10 comments
+           || RAM(69.9375MB)
+2023-05-16 06:36:19,000 - \_reposts:
+            5 reposts
+           || RAM(69.9375MB)
+2023-05-16 06:36:19,029 - https://www.linkedin.com/feed/update/urn:li:activity:7027181713017458688 || RAM(69.9375MB)
+2023-05-16 06:36:19,039 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1417")> || RAM(69.953125MB)
+2023-05-16 06:36:19,052 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1496")> || RAM(69.953125MB)
+2023-05-16 06:36:19,061 - CURRENT URNurn:li:activity:7024265924815814656 || RAM(69.953125MB)
+2023-05-16 06:36:19,073 - \_date pre: 3mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.953125MB)
+2023-05-16 06:36:19,073 - \_date post: 3 || RAM(69.953125MB)
+2023-05-16 06:36:19,086 - 106 || RAM(69.953125MB)
+2023-05-16 06:36:19,112 - \_comments: 
+            2 comments
+           || RAM(69.953125MB)
+2023-05-16 06:36:19,117 - \_reposts:
+            2 reposts
+           || RAM(69.953125MB)
+2023-05-16 06:36:19,147 - https://www.linkedin.com/feed/update/urn:li:activity:7024265924815814656 || RAM(69.953125MB)
+2023-05-16 06:36:19,156 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1560")> || RAM(69.953125MB)
+2023-05-16 06:36:19,164 - CURRENT URNurn:li:activity:7023556248780308480 || RAM(69.953125MB)
+2023-05-16 06:36:19,176 - \_date pre: 4mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(69.953125MB)
+2023-05-16 06:36:19,176 - \_date post: 4 || RAM(69.953125MB)
+2023-05-16 06:36:19,189 - 74 || RAM(69.953125MB)
+2023-05-16 06:36:19,214 - \_comments: 
+            7 comments
+           || RAM(69.953125MB)
+2023-05-16 06:36:19,246 - https://www.linkedin.com/feed/update/urn:li:activity:7023556248780308480 || RAM(69.953125MB)
+2023-05-16 06:36:19,257 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1623")> || RAM(69.96875MB)
+2023-05-16 06:36:19,285 - CURRENT URNurn:li:activity:7021751006283591682 || RAM(70.03125MB)
+2023-05-16 06:36:19,300 - \_date pre: 4mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.03125MB)
+2023-05-16 06:36:19,300 - \_date post: 4 || RAM(70.03125MB)
+2023-05-16 06:36:19,317 - 338 || RAM(70.03125MB)
+2023-05-16 06:36:19,345 - \_comments: 
+            8 comments
+           || RAM(70.03125MB)
+2023-05-16 06:36:19,350 - \_reposts:
+            6 reposts
+           || RAM(70.03125MB)
+2023-05-16 06:36:19,384 - https://www.linkedin.com/feed/update/urn:li:activity:7021751006283591682 || RAM(70.03125MB)
+2023-05-16 06:36:19,395 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1690")> || RAM(70.03125MB)
+2023-05-16 06:36:19,411 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1770")> || RAM(70.03125MB)
+2023-05-16 06:36:19,420 - CURRENT URNurn:li:activity:7011692211654270976 || RAM(70.03125MB)
+2023-05-16 06:36:19,435 - \_date pre: 5mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.03125MB)
+2023-05-16 06:36:19,435 - \_date post: 5 || RAM(70.03125MB)
+2023-05-16 06:36:19,449 - 105 || RAM(70.03125MB)
+2023-05-16 06:36:19,475 - \_comments: 
+            7 comments
+           || RAM(70.03125MB)
+2023-05-16 06:36:19,510 - https://www.linkedin.com/feed/update/urn:li:activity:7011692211654270976 || RAM(70.09375MB)
+2023-05-16 06:36:19,521 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1831")> || RAM(70.09375MB)
+2023-05-16 06:36:19,539 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1890")> || RAM(70.09375MB)
+2023-05-16 06:36:19,549 - repost || RAM(70.09375MB)
+2023-05-16 06:36:19,560 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_1972")> || RAM(70.09375MB)
+2023-05-16 06:36:19,569 - CURRENT URNurn:li:activity:7008336712896499712 || RAM(70.09375MB)
+2023-05-16 06:36:19,582 - \_date pre: 5mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.09375MB)
+2023-05-16 06:36:19,582 - \_date post: 5 || RAM(70.09375MB)
+2023-05-16 06:36:19,607 - 53 || RAM(70.09375MB)
+2023-05-16 06:36:19,634 - \_comments: 
+            3 comments
+           || RAM(70.25MB)
+2023-05-16 06:36:19,677 - https://www.linkedin.com/feed/update/urn:li:activity:7008336712896499712 || RAM(70.5625MB)
+2023-05-16 06:36:19,689 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2039")> || RAM(70.5625MB)
+2023-05-16 06:36:19,699 - CURRENT URNurn:li:activity:7005448089608015872 || RAM(70.5625MB)
+2023-05-16 06:36:19,713 - \_date pre: 5mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.5625MB)
+2023-05-16 06:36:19,713 - \_date post: 5 || RAM(70.5625MB)
+2023-05-16 06:36:19,727 - 60 || RAM(70.5625MB)
+2023-05-16 06:36:19,768 - \_comments: 
+            4 comments
+           || RAM(70.5625MB)
+2023-05-16 06:36:19,773 - \_reposts:
+            1 repost
+           || RAM(70.5625MB)
+2023-05-16 06:36:19,806 - https://www.linkedin.com/feed/update/urn:li:activity:7005448089608015872 || RAM(70.5625MB)
+2023-05-16 06:36:19,815 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2113")> || RAM(70.5625MB)
+2023-05-16 06:36:19,824 - CURRENT URNurn:li:activity:7003650584851423232 || RAM(70.5625MB)
+2023-05-16 06:36:19,837 - \_date pre: 5mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.5625MB)
+2023-05-16 06:36:19,837 - \_date post: 5 || RAM(70.5625MB)
+2023-05-16 06:36:19,850 - 83 || RAM(70.5625MB)
+2023-05-16 06:36:19,887 - \_comments: 
+            8 comments
+           || RAM(70.5625MB)
+2023-05-16 06:36:19,892 - \_reposts:
+            1 repost
+           || RAM(70.5625MB)
+2023-05-16 06:36:19,972 - https://www.linkedin.com/feed/update/urn:li:activity:7003650584851423232 || RAM(70.5625MB)
+2023-05-16 06:36:19,983 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2185")> || RAM(70.5625MB)
+2023-05-16 06:36:19,993 - CURRENT URNurn:li:activity:7001456559763390464 || RAM(70.5625MB)
+2023-05-16 06:36:20,005 - \_date pre: 6mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.5625MB)
+2023-05-16 06:36:20,005 - \_date post: 6 || RAM(70.5625MB)
+2023-05-16 06:36:20,017 - 158 || RAM(70.5625MB)
+2023-05-16 06:36:20,053 - \_comments: 
+            35 comments
+           || RAM(70.5625MB)
+2023-05-16 06:36:20,058 - \_reposts:
+            2 reposts
+           || RAM(70.5625MB)
+2023-05-16 06:36:20,090 - https://www.linkedin.com/feed/update/urn:li:activity:7001456559763390464 || RAM(70.5625MB)
+2023-05-16 06:36:20,099 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2257")> || RAM(70.5625MB)
+2023-05-16 06:36:20,115 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2306")> || RAM(70.5625MB)
+2023-05-16 06:36:20,128 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2387")> || RAM(70.5625MB)
+2023-05-16 06:36:20,136 - CURRENT URNurn:li:activity:6995647153830293504 || RAM(70.5625MB)
+2023-05-16 06:36:20,148 - \_date pre: 6mo • Edited • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.5625MB)
+2023-05-16 06:36:20,148 - \_date post: 6 || RAM(70.5625MB)
+2023-05-16 06:36:20,161 - 135 || RAM(70.5625MB)
+2023-05-16 06:36:20,187 - \_comments: 
+            1 comment
+           || RAM(70.5625MB)
+2023-05-16 06:36:20,218 - https://www.linkedin.com/feed/update/urn:li:activity:6995647153830293504 || RAM(70.5625MB)
+2023-05-16 06:36:20,228 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2452")> || RAM(70.5625MB)
+2023-05-16 06:36:20,238 - CURRENT URNurn:li:activity:6993890677977686016 || RAM(70.5625MB)
+2023-05-16 06:36:20,252 - \_date pre: 6mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.5625MB)
+2023-05-16 06:36:20,252 - \_date post: 6 || RAM(70.5625MB)
+2023-05-16 06:36:20,266 - 36 || RAM(70.5625MB)
+2023-05-16 06:36:20,290 - \_reposts:
+            2 reposts
+           || RAM(70.5625MB)
+2023-05-16 06:36:20,327 - https://www.linkedin.com/feed/update/urn:li:activity:6993890677977686016 || RAM(70.5625MB)
+2023-05-16 06:36:20,337 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2518")> || RAM(70.5625MB)
+2023-05-16 06:36:20,347 - CURRENT URNurn:li:activity:6993592372420870145 || RAM(70.5625MB)
+2023-05-16 06:36:20,363 - \_date pre: 6mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.5625MB)
+2023-05-16 06:36:20,363 - \_date post: 6 || RAM(70.5625MB)
+2023-05-16 06:36:20,376 - 74 || RAM(70.5625MB)
+2023-05-16 06:36:20,404 - \_comments: 
+            2 comments
+           || RAM(70.5625MB)
+2023-05-16 06:36:20,435 - https://www.linkedin.com/feed/update/urn:li:activity:6993592372420870145 || RAM(70.5625MB)
+2023-05-16 06:36:20,445 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2583")> || RAM(70.5625MB)
+2023-05-16 06:36:20,455 - CURRENT URNurn:li:activity:6988075871303573504 || RAM(70.5625MB)
+2023-05-16 06:36:20,469 - \_date pre: 7mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.5625MB)
+2023-05-16 06:36:20,469 - \_date post: 7 || RAM(70.5625MB)
+2023-05-16 06:36:20,482 - 78 || RAM(70.5625MB)
+2023-05-16 06:36:20,517 - \_comments: 
+            6 comments
+           || RAM(70.5625MB)
+2023-05-16 06:36:20,521 - \_reposts:
+            2 reposts
+           || RAM(70.5625MB)
+2023-05-16 06:36:20,555 - https://www.linkedin.com/feed/update/urn:li:activity:6988075871303573504 || RAM(70.5625MB)
+2023-05-16 06:36:20,567 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2651")> || RAM(70.5625MB)
+2023-05-16 06:36:20,582 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2732")> || RAM(70.5625MB)
+2023-05-16 06:36:20,591 - CURRENT URNurn:li:activity:6982976211274579968 || RAM(70.5625MB)
+2023-05-16 06:36:20,603 - \_date pre: 8mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.5625MB)
+2023-05-16 06:36:20,603 - \_date post: 8 || RAM(70.5625MB)
+2023-05-16 06:36:20,617 - 179 || RAM(70.5625MB)
+2023-05-16 06:36:20,666 - \_comments: 
+            2 comments
+           || RAM(70.5625MB)
+2023-05-16 06:36:20,698 - https://www.linkedin.com/feed/update/urn:li:activity:6982976211274579968 || RAM(70.5625MB)
+2023-05-16 06:36:20,708 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2808")> || RAM(70.5625MB)
+2023-05-16 06:36:20,717 - CURRENT URNurn:li:activity:6981148396434685953 || RAM(70.5625MB)
+2023-05-16 06:36:20,730 - \_date pre: 8mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.5625MB)
+2023-05-16 06:36:20,730 - \_date post: 8 || RAM(70.5625MB)
+2023-05-16 06:36:20,743 - 253 || RAM(70.5625MB)
+2023-05-16 06:36:20,770 - \_comments: 
+            50 comments
+           || RAM(70.5625MB)
+2023-05-16 06:36:20,774 - \_reposts:
+            15 reposts
+           || RAM(70.5625MB)
+2023-05-16 06:36:20,806 - https://www.linkedin.com/feed/update/urn:li:activity:6981148396434685953 || RAM(70.5625MB)
+2023-05-16 06:36:20,815 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2874")> || RAM(70.5625MB)
+2023-05-16 06:36:20,824 - CURRENT URNurn:li:activity:6973535031877066753 || RAM(70.5625MB)
+2023-05-16 06:36:20,838 - \_date pre: 8mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.5625MB)
+2023-05-16 06:36:20,838 - \_date post: 8 || RAM(70.5625MB)
+2023-05-16 06:36:20,852 - 303 || RAM(70.5625MB)
+2023-05-16 06:36:20,874 - \_comments: 
+            14 comments
+           || RAM(70.5625MB)
+2023-05-16 06:36:20,878 - \_reposts:
+            1 repost
+           || RAM(70.5625MB)
+2023-05-16 06:36:20,908 - https://www.linkedin.com/feed/update/urn:li:activity:6973535031877066753 || RAM(70.5625MB)
+2023-05-16 06:36:20,917 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_2939")> || RAM(70.5625MB)
+2023-05-16 06:36:20,926 - CURRENT URNurn:li:activity:6972880216612294656 || RAM(70.5625MB)
+2023-05-16 06:36:20,937 - \_date pre: 8mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.5625MB)
+2023-05-16 06:36:20,938 - \_date post: 8 || RAM(70.5625MB)
+2023-05-16 06:36:20,950 - 77 || RAM(70.5625MB)
+2023-05-16 06:36:21,000 - https://www.linkedin.com/feed/update/urn:li:activity:6972880216612294656 || RAM(70.5625MB)
+2023-05-16 06:36:21,010 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_3003")> || RAM(70.5625MB)
+2023-05-16 06:36:21,018 - CURRENT URNurn:li:activity:6971028573054713857 || RAM(70.5625MB)
+2023-05-16 06:36:21,031 - \_date pre: 9mo • <li-icon aria-hidden="true" type="globe-americas" class="v-align-bottom" size="small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+  <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+</svg></li-icon>  || RAM(70.5625MB)
+2023-05-16 06:36:21,031 - \_date post: 9 || RAM(70.5625MB)
+2023-05-16 06:36:21,044 - 26 || RAM(70.5625MB)
+2023-05-16 06:36:21,065 - \_comments: 
+            1 comment
+           || RAM(70.5625MB)
+2023-05-16 06:36:21,097 - https://www.linkedin.com/feed/update/urn:li:activity:6971028573054713857 || RAM(70.5625MB)
+2023-05-16 06:36:21,106 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_3071")> || RAM(70.5625MB)
+2023-05-16 06:36:21,120 - <selenium.webdriver.remote.webelement.WebElement (session="193d24527dec4fb61a4d1828b601f62e", element="552D1CA5BE4427AA3117323F4C50AEA7_element_3115")> || RAM(70.5625MB)
+2023-05-16 06:36:21,130 - postdata reached || RAM(71.625MB)
+2023-05-16 06:36:21,133 - 8 || RAM(72.234375MB)
+2023-05-16 06:36:21,135 - \_SCRAPED successfully || RAM(72.421875MB)
