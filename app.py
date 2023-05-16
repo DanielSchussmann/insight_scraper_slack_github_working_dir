@@ -8,12 +8,6 @@ from jinja2 import Template
 #check if update
 client = slack.WebClient(token=slack_token)
 
-#standard_message=f'{result['posts_in_tf']}'
-#f"{result['user_name']}'s KPI \n Posts count: {result['posts_in_tf']} \n Avg. Likes: {result['avg_likes']} \n Avg. Comments: {result['avg_comments']}"
-
-
-timeout_message=''
-
 
 
 try:
@@ -61,13 +55,13 @@ try:
                     save_html.close()
                     client.files_upload(channels=test_channel,
                                         initial_comment=f"{result['user_name']}'s KPI \n Posts count: {result['posts_in_tf']} \n Likes(avg): {result['avg_likes']} \n Comments(avg): {result['avg_comments']}" if result['timeout'] == False
-                                        else f"NOTE: Timeout after {timeout_trigger}s. This means there might be data missing! contact admin if KPI is insufficientf \n {result['user_name']}'s KPI \n Posts count: {result['posts_in_tf']} \n Likes(avg): {result['avg_likes']} \n Comments(avg): {result['avg_comments']}",
+                                        else f"NOTE: Timeout after {timeout_trigger}s. This means there might be data missing! contact admin if KPI is insufficient \n {result['user_name']}'s KPI \n Posts count: {result['posts_in_tf']} \n Likes(avg): {result['avg_likes']} \n Comments(avg): {result['avg_comments']}",
                                         thread_ts=msg['ts'],
                                         file=file_name)
                     #client.chat_postMessage(channel=test_channel, thread_ts=msg['ts'], text='HELLOU')
 
                 except  Exception as e:
-                    client.chat_postMessage(channel=test_channel, thread_ts=msg['ts'], text=f'>.< something went wrong \n {e}')
+                    client.chat_postMessage(channel=test_channel, thread_ts=msg['ts'], text=f'something went wrong \n {e} \n Check pinned messages for HELP')
 except  Exception as e:
     print(e)
     client.chat_postMessage(channel=admin_channel, text=f'~FULL FAILURE~ \n {e}')
