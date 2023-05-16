@@ -54,8 +54,8 @@ try:
                     save_html.write(render)
                     save_html.close()
                     client.files_upload(channels=test_channel,
-                                        initial_comment=f"{result['user_name']}'s KPI \n Posts count: {result['posts_in_tf']} \n Likes(avg): {result['avg_likes']} \n Comments(avg): {result['avg_comments']}" if result['timeout'] == False
-                                        else f"NOTE: Timeout after {timeout_trigger}s. This means there might be data missing! contact admin if KPI is insufficient \n {result['user_name']}'s KPI \n Posts count: {result['posts_in_tf']} \n Likes(avg): {result['avg_likes']} \n Comments(avg): {result['avg_comments']}",
+                                        initial_comment=f"{result['user_name']}'s KPI \n Follower: {result['followers']} \n Posts count: {result['posts_in_tf']} \n Likes(avg): {result['avg_likes']} \n Comments(avg): {result['avg_comments']}" if result['timeout'] == False
+                                        else f"NOTE: Timeout after {timeout_trigger}s. This means there might be data missing! contact admin if KPI is insufficient \n {result['user_name']}'s KPI \n Follower: {result['followers']} \n Posts count: {result['posts_in_tf']} \n Likes(avg): {result['avg_likes']} \n Comments(avg): {result['avg_comments']}",
                                         thread_ts=msg['ts'],
                                         file=file_name)
                     #client.chat_postMessage(channel=test_channel, thread_ts=msg['ts'], text='HELLOU')
