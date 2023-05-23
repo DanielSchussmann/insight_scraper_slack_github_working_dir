@@ -37,7 +37,7 @@ try:
                         date=' ' + str(datetime.datetime.now())[:10],
                         user_name=result['user_name'],
                         followers=result['followers'],
-                        posts_in_tf=result['posts_in_tf'],
+                        posts_in_tf=np.round(result['posts_in_tf']/12,2),
                         avg_likes=result['avg_likes'],
                         profile_redirect=link,
                         avg_comments=result['avg_comments'],
@@ -46,13 +46,16 @@ try:
                         tables=[result['mip'].to_html(classes='data', header="true", index=False)],
                         pp_url=result['pp_url'])
 
+                    base_output=f"{result['user_name']}'s KPI \n Follower: {result['followers']} \n Posts per week: {np.round(result['posts_in_tf']/12,2)} \n Likes(avg): {result['avg_likes']} \n Comments(avg): {result['avg_comments']} \n Post range: {result['first_post']} - {result['last_post']}"
+
+
                     file_name = 'html_saves/' + result['user_name'] + ' ' + str(datetime.datetime.now())[:10] + '.html'
                     save_html = open(file_name, "w")
                     save_html.write(render)
                     save_html.close()
                     client.files_upload(channels=active_channel,
-                                        initial_comment=f"{result['user_name']}'s KPI \n Follower: {result['followers']} \n Posts count: {result['posts_in_tf']} \n Likes(avg): {result['avg_likes']} \n Comments(avg): {result['avg_comments']}" if result['timeout'] == False
-                                        else f"NOTE: Timeout after {timeout_trigger}s. This means there might be data missing! contact admin if KPI is insufficient \n {result['user_name']}'s KPI \n Follower: {result['followers']} \n Posts count: {result['posts_in_tf']} \n Likes(avg): {result['avg_likes']} \n Comments(avg): {result['avg_comments']}",
+                                        initial_comment=base_output if result['timeout'] == False
+                                        else f"NOTE: Profile's post frequency is to high to ensure a stable scrape. timeout after {timeout_trigger} \n" + base_output,
                                         thread_ts=msg['ts'],
                                         file=file_name)
                     #client.chat_postMessage(channel=test_channel, thread_ts=msg['ts'], text='HELLOU')
@@ -60,7 +63,7 @@ try:
                 except  Exception as e:
                     client.chat_postMessage(channel=active_channel, thread_ts=msg['ts'], text=f'something went wrong \n {e if "NaN" not in e else "underflown post count"} \n Check pinned messages for HELP')
 except  Exception as e:
-    print(e)
+    print(e ,'egg')
     client.chat_postMessage(channel=admin_channel, text=f'~FULL FAILURE~ \n {e}')
 
 

@@ -12,7 +12,7 @@ import re
 
 post_load_speed = 3
 page_load_speed = 3
-timeout_trigger = 240
+timeout_trigger = 200
 
 def scarpe_and_stat(link,bypass = False):
 #-------------------------------DRIVER-SETUP-------------------------------
@@ -105,6 +105,8 @@ def scarpe_and_stat(link,bypass = False):
 
                         pre_date =  post.find_element(By.CSS_SELECTOR,'.update-components-text-view.break-words') #re.findall(r"\d+[hwdmy]o?", post.get_attribute('innerHTML'))[0] #
                         date_wrap = pre_date.find_elements(By.TAG_NAME,'span')[1].get_attribute('innerHTML')
+                        date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+
 
                         com('\_date pre: {}'.format(date_wrap))
                         if re.search(r"\d+[hwd]", date_wrap):date_wrap = 1
@@ -148,12 +150,12 @@ def scarpe_and_stat(link,bypass = False):
                     #urn = urn_parent.get_attribute('data-urn')
                     link_to_profile='https://www.linkedin.com/feed/update/{}'.format(str(urn))
                     #post_text = post.find_element(By.CSS_SELECTOR,'.update-components-text.relative.feed-shared-update-v2__commentary').text
-                    post_data.append([date_wrap, likes, kommentare, reposts,link_to_profile])
+                    post_data.append([date_wrap, likes, kommentare, reposts,link_to_profile,date_clear_text])
                     # com(likes,date_wrap,kommentare,reposts)
 
                     com(link_to_profile)
 
-            post_data = pd.DataFrame(post_data, columns=['date', 'likes', 'comments', 'reposts', 'link'])
+            post_data = pd.DataFrame(post_data, columns=['date', 'likes', 'comments', 'reposts', 'link','date_text'])
             post_data = post_data[post_data['date']<=2]
             com("postdata reached")
             break
@@ -183,12 +185,15 @@ def scarpe_and_stat(link,bypass = False):
     post_data.to_csv('csvs/'+ user_name +'_'+str(datetime.datetime.now())[:10]+'.csv')
     #post_data = post_data[post_data['date'] <= 3]# [input_data['date']<=3]
     com(len(post_data))
+    if len(post_data) < 5:
+        raise Exception('Underful profile')
+
     stated_data = threeMo_stat(post_data)
 
 
 
 
-    results = {'user_name':user_name,'followers':followers,'pp_url':pp_url,'timeout':timeout} | stated_data
+    results = {'user_name':user_name,'followers':followers,'pp_url':pp_url,'timeout':timeout,'first_post':post_data.iloc[0]['date_text'],'last_post':post_data.iloc[-1]['date_text']} | stated_data
 
 
     com('\_SCRAPED successfully')
