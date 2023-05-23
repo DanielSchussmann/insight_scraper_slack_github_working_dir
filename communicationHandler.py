@@ -2,6 +2,12 @@ import sys
 import logging
 import telepot
 import os, psutil
+import slack
+from internal_secrets import *
+#SLACK
+
+
+client = slack.WebClient(token=slack_token)
 
 
 logger = logging.getLogger(__name__)
