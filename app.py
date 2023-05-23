@@ -60,10 +60,12 @@ try:
                                         file=file_name)
                     #client.chat_postMessage(channel=test_channel, thread_ts=msg['ts'], text='HELLOU')
 
-                except  Exception as e:
-                    client.chat_postMessage(channel=active_channel, thread_ts=msg['ts'], text=f'something went wrong \n {e if "NaN" not in e else "underflown post count"} \n Check pinned messages for HELP')
-except  Exception as e:
-    print(e ,'egg')
+                except  Exception as e_loop:
+                    #print(e_loop, '$$| loop-except-trigger |$$')
+                    client.chat_postMessage(channel=active_channel, thread_ts=msg['ts'], text=f':zap:{e_loop} \n _Check pinned messages for HELP_')
+
+except  Exception as e_main:
+    #print(e_main ,'outer-except-trigger')
     client.chat_postMessage(channel=admin_channel, text=f'~FULL FAILURE~ \n {e}')
 
 

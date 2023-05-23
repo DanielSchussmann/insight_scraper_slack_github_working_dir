@@ -186,7 +186,7 @@ def scarpe_and_stat(link,bypass = False):
     #post_data = post_data[post_data['date'] <= 3]# [input_data['date']<=3]
     com(len(post_data))
     if len(post_data) < 5:
-        raise Exception('Underful profile')
+        raise Exception(f"Profile does not have enough posts in the past three months to ensure a stable scrape. \n\n Please analyse {user_name} manually")
 
     stated_data = threeMo_stat(post_data)
 

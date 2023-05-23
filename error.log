@@ -34177,3 +34177,707 @@ Traceback (most recent call last):
     raise e.SlackApiError(message=msg, response=self)
 slack.errors.SlackApiError: The request to the Slack API failed.
 The server responded with: {'ok': False, 'error': 'channel_not_found'}
+2023-05-23 09:14:53,770 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x0000000100d878ac chromedriver + 4257964
+1   chromedriver                        0x0000000100d7ff40 chromedriver + 4226880
+2   chromedriver                        0x00000001009bc9d4 chromedriver + 281044
+3   chromedriver                        0x00000001009f7a34 chromedriver + 522804
+4   chromedriver                        0x00000001009ed1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a2e7e4 chromedriver + 747492
+6   chromedriver                        0x00000001009eb98c chromedriver + 473484
+7   chromedriver                        0x00000001009ec98c chromedriver + 477580
+8   chromedriver                        0x0000000100d46900 chromedriver + 3991808
+9   chromedriver                        0x0000000100d4a354 chromedriver + 4006740
+10  chromedriver                        0x0000000100d4a940 chromedriver + 4008256
+11  chromedriver                        0x0000000100d5033c chromedriver + 4031292
+12  chromedriver                        0x0000000100d4af34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d23490 chromedriver + 3847312
+14  chromedriver                        0x0000000100d689f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100d68b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100d79230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:14:53,804 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x0000000100d878ac chromedriver + 4257964
+1   chromedriver                        0x0000000100d7ff40 chromedriver + 4226880
+2   chromedriver                        0x00000001009bc9d4 chromedriver + 281044
+3   chromedriver                        0x00000001009f7a34 chromedriver + 522804
+4   chromedriver                        0x00000001009ed1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a2e7e4 chromedriver + 747492
+6   chromedriver                        0x00000001009eb98c chromedriver + 473484
+7   chromedriver                        0x00000001009ec98c chromedriver + 477580
+8   chromedriver                        0x0000000100d46900 chromedriver + 3991808
+9   chromedriver                        0x0000000100d4a354 chromedriver + 4006740
+10  chromedriver                        0x0000000100d4a940 chromedriver + 4008256
+11  chromedriver                        0x0000000100d5033c chromedriver + 4031292
+12  chromedriver                        0x0000000100d4af34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d23490 chromedriver + 3847312
+14  chromedriver                        0x0000000100d689f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100d68b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100d79230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:14:53,838 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x0000000100d878ac chromedriver + 4257964
+1   chromedriver                        0x0000000100d7ff40 chromedriver + 4226880
+2   chromedriver                        0x00000001009bc9d4 chromedriver + 281044
+3   chromedriver                        0x00000001009f7a34 chromedriver + 522804
+4   chromedriver                        0x00000001009ed1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a2e7e4 chromedriver + 747492
+6   chromedriver                        0x00000001009eb98c chromedriver + 473484
+7   chromedriver                        0x00000001009ec98c chromedriver + 477580
+8   chromedriver                        0x0000000100d46900 chromedriver + 3991808
+9   chromedriver                        0x0000000100d4a354 chromedriver + 4006740
+10  chromedriver                        0x0000000100d4a940 chromedriver + 4008256
+11  chromedriver                        0x0000000100d5033c chromedriver + 4031292
+12  chromedriver                        0x0000000100d4af34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d23490 chromedriver + 3847312
+14  chromedriver                        0x0000000100d689f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100d68b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100d79230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:14:53,871 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x0000000100d878ac chromedriver + 4257964
+1   chromedriver                        0x0000000100d7ff40 chromedriver + 4226880
+2   chromedriver                        0x00000001009bc9d4 chromedriver + 281044
+3   chromedriver                        0x00000001009f7a34 chromedriver + 522804
+4   chromedriver                        0x00000001009ed1cc chromedriver + 479692
+5   chromedriver                        0x0000000100a2e7e4 chromedriver + 747492
+6   chromedriver                        0x00000001009eb98c chromedriver + 473484
+7   chromedriver                        0x00000001009ec98c chromedriver + 477580
+8   chromedriver                        0x0000000100d46900 chromedriver + 3991808
+9   chromedriver                        0x0000000100d4a354 chromedriver + 4006740
+10  chromedriver                        0x0000000100d4a940 chromedriver + 4008256
+11  chromedriver                        0x0000000100d5033c chromedriver + 4031292
+12  chromedriver                        0x0000000100d4af34 chromedriver + 4009780
+13  chromedriver                        0x0000000100d23490 chromedriver + 3847312
+14  chromedriver                        0x0000000100d689f4 chromedriver + 4131316
+15  chromedriver                        0x0000000100d68b4c chromedriver + 4131660
+16  chromedriver                        0x0000000100d79230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:14:54,086 - Uncaught exception
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/app.py", line 30, in <module>
+    result = scarpe_and_stat(link + 'recent-activity/all/')
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 189, in scarpe_and_stat
+    raise Exception('Underful profile')
+Exception: Underful profile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/app.py", line 65, in <module>
+    client.chat_postMessage(channel=active_channel, thread_ts=msg['ts'], text=f'something went wrong \n {e if "NaN" not in e else "underflown post count"} \n Check pinned messages for HELP')
+TypeError: argument of type 'Exception' is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/app.py", line 68, in <module>
+    client.chat_postMessage(channel=admin_channel, text=f'~FULL FAILURE~ \n {e}')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/slack/web/client.py", line 1077, in chat_postMessage
+    return self.api_call("chat.postMessage", json=kwargs)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/slack/web/base_client.py", line 150, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/slack/web/base_client.py", line 241, in _sync_send
+    return self._urllib_api_call(
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/slack/web/base_client.py", line 378, in _urllib_api_call
+    ).validate()
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/slack/web/slack_response.py", line 194, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack.errors.SlackApiError: The request to the Slack API failed.
+The server responded with: {'ok': False, 'error': 'channel_not_found'}
+2023-05-23 09:19:10,983 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x00000001008cb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001008c3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001005009d4 chromedriver + 281044
+3   chromedriver                        0x000000010053ba34 chromedriver + 522804
+4   chromedriver                        0x00000001005311cc chromedriver + 479692
+5   chromedriver                        0x00000001005727e4 chromedriver + 747492
+6   chromedriver                        0x000000010052f98c chromedriver + 473484
+7   chromedriver                        0x000000010053098c chromedriver + 477580
+8   chromedriver                        0x000000010088a900 chromedriver + 3991808
+9   chromedriver                        0x000000010088e354 chromedriver + 4006740
+10  chromedriver                        0x000000010088e940 chromedriver + 4008256
+11  chromedriver                        0x000000010089433c chromedriver + 4031292
+12  chromedriver                        0x000000010088ef34 chromedriver + 4009780
+13  chromedriver                        0x0000000100867490 chromedriver + 3847312
+14  chromedriver                        0x00000001008ac9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001008acb4c chromedriver + 4131660
+16  chromedriver                        0x00000001008bd230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:19:11,018 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x00000001008cb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001008c3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001005009d4 chromedriver + 281044
+3   chromedriver                        0x000000010053ba34 chromedriver + 522804
+4   chromedriver                        0x00000001005311cc chromedriver + 479692
+5   chromedriver                        0x00000001005727e4 chromedriver + 747492
+6   chromedriver                        0x000000010052f98c chromedriver + 473484
+7   chromedriver                        0x000000010053098c chromedriver + 477580
+8   chromedriver                        0x000000010088a900 chromedriver + 3991808
+9   chromedriver                        0x000000010088e354 chromedriver + 4006740
+10  chromedriver                        0x000000010088e940 chromedriver + 4008256
+11  chromedriver                        0x000000010089433c chromedriver + 4031292
+12  chromedriver                        0x000000010088ef34 chromedriver + 4009780
+13  chromedriver                        0x0000000100867490 chromedriver + 3847312
+14  chromedriver                        0x00000001008ac9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001008acb4c chromedriver + 4131660
+16  chromedriver                        0x00000001008bd230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:19:11,054 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x00000001008cb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001008c3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001005009d4 chromedriver + 281044
+3   chromedriver                        0x000000010053ba34 chromedriver + 522804
+4   chromedriver                        0x00000001005311cc chromedriver + 479692
+5   chromedriver                        0x00000001005727e4 chromedriver + 747492
+6   chromedriver                        0x000000010052f98c chromedriver + 473484
+7   chromedriver                        0x000000010053098c chromedriver + 477580
+8   chromedriver                        0x000000010088a900 chromedriver + 3991808
+9   chromedriver                        0x000000010088e354 chromedriver + 4006740
+10  chromedriver                        0x000000010088e940 chromedriver + 4008256
+11  chromedriver                        0x000000010089433c chromedriver + 4031292
+12  chromedriver                        0x000000010088ef34 chromedriver + 4009780
+13  chromedriver                        0x0000000100867490 chromedriver + 3847312
+14  chromedriver                        0x00000001008ac9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001008acb4c chromedriver + 4131660
+16  chromedriver                        0x00000001008bd230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:19:11,085 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x00000001008cb8ac chromedriver + 4257964
+1   chromedriver                        0x00000001008c3f40 chromedriver + 4226880
+2   chromedriver                        0x00000001005009d4 chromedriver + 281044
+3   chromedriver                        0x000000010053ba34 chromedriver + 522804
+4   chromedriver                        0x00000001005311cc chromedriver + 479692
+5   chromedriver                        0x00000001005727e4 chromedriver + 747492
+6   chromedriver                        0x000000010052f98c chromedriver + 473484
+7   chromedriver                        0x000000010053098c chromedriver + 477580
+8   chromedriver                        0x000000010088a900 chromedriver + 3991808
+9   chromedriver                        0x000000010088e354 chromedriver + 4006740
+10  chromedriver                        0x000000010088e940 chromedriver + 4008256
+11  chromedriver                        0x000000010089433c chromedriver + 4031292
+12  chromedriver                        0x000000010088ef34 chromedriver + 4009780
+13  chromedriver                        0x0000000100867490 chromedriver + 3847312
+14  chromedriver                        0x00000001008ac9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001008acb4c chromedriver + 4131660
+16  chromedriver                        0x00000001008bd230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:33:27,194 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x00000001011db8ac chromedriver + 4257964
+1   chromedriver                        0x00000001011d3f40 chromedriver + 4226880
+2   chromedriver                        0x0000000100e109d4 chromedriver + 281044
+3   chromedriver                        0x0000000100e4ba34 chromedriver + 522804
+4   chromedriver                        0x0000000100e411cc chromedriver + 479692
+5   chromedriver                        0x0000000100e827e4 chromedriver + 747492
+6   chromedriver                        0x0000000100e3f98c chromedriver + 473484
+7   chromedriver                        0x0000000100e4098c chromedriver + 477580
+8   chromedriver                        0x000000010119a900 chromedriver + 3991808
+9   chromedriver                        0x000000010119e354 chromedriver + 4006740
+10  chromedriver                        0x000000010119e940 chromedriver + 4008256
+11  chromedriver                        0x00000001011a433c chromedriver + 4031292
+12  chromedriver                        0x000000010119ef34 chromedriver + 4009780
+13  chromedriver                        0x0000000101177490 chromedriver + 3847312
+14  chromedriver                        0x00000001011bc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001011bcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001011cd230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:33:27,229 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x00000001011db8ac chromedriver + 4257964
+1   chromedriver                        0x00000001011d3f40 chromedriver + 4226880
+2   chromedriver                        0x0000000100e109d4 chromedriver + 281044
+3   chromedriver                        0x0000000100e4ba34 chromedriver + 522804
+4   chromedriver                        0x0000000100e411cc chromedriver + 479692
+5   chromedriver                        0x0000000100e827e4 chromedriver + 747492
+6   chromedriver                        0x0000000100e3f98c chromedriver + 473484
+7   chromedriver                        0x0000000100e4098c chromedriver + 477580
+8   chromedriver                        0x000000010119a900 chromedriver + 3991808
+9   chromedriver                        0x000000010119e354 chromedriver + 4006740
+10  chromedriver                        0x000000010119e940 chromedriver + 4008256
+11  chromedriver                        0x00000001011a433c chromedriver + 4031292
+12  chromedriver                        0x000000010119ef34 chromedriver + 4009780
+13  chromedriver                        0x0000000101177490 chromedriver + 3847312
+14  chromedriver                        0x00000001011bc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001011bcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001011cd230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:33:27,265 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x00000001011db8ac chromedriver + 4257964
+1   chromedriver                        0x00000001011d3f40 chromedriver + 4226880
+2   chromedriver                        0x0000000100e109d4 chromedriver + 281044
+3   chromedriver                        0x0000000100e4ba34 chromedriver + 522804
+4   chromedriver                        0x0000000100e411cc chromedriver + 479692
+5   chromedriver                        0x0000000100e827e4 chromedriver + 747492
+6   chromedriver                        0x0000000100e3f98c chromedriver + 473484
+7   chromedriver                        0x0000000100e4098c chromedriver + 477580
+8   chromedriver                        0x000000010119a900 chromedriver + 3991808
+9   chromedriver                        0x000000010119e354 chromedriver + 4006740
+10  chromedriver                        0x000000010119e940 chromedriver + 4008256
+11  chromedriver                        0x00000001011a433c chromedriver + 4031292
+12  chromedriver                        0x000000010119ef34 chromedriver + 4009780
+13  chromedriver                        0x0000000101177490 chromedriver + 3847312
+14  chromedriver                        0x00000001011bc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001011bcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001011cd230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:33:27,302 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x00000001011db8ac chromedriver + 4257964
+1   chromedriver                        0x00000001011d3f40 chromedriver + 4226880
+2   chromedriver                        0x0000000100e109d4 chromedriver + 281044
+3   chromedriver                        0x0000000100e4ba34 chromedriver + 522804
+4   chromedriver                        0x0000000100e411cc chromedriver + 479692
+5   chromedriver                        0x0000000100e827e4 chromedriver + 747492
+6   chromedriver                        0x0000000100e3f98c chromedriver + 473484
+7   chromedriver                        0x0000000100e4098c chromedriver + 477580
+8   chromedriver                        0x000000010119a900 chromedriver + 3991808
+9   chromedriver                        0x000000010119e354 chromedriver + 4006740
+10  chromedriver                        0x000000010119e940 chromedriver + 4008256
+11  chromedriver                        0x00000001011a433c chromedriver + 4031292
+12  chromedriver                        0x000000010119ef34 chromedriver + 4009780
+13  chromedriver                        0x0000000101177490 chromedriver + 3847312
+14  chromedriver                        0x00000001011bc9f4 chromedriver + 4131316
+15  chromedriver                        0x00000001011bcb4c chromedriver + 4131660
+16  chromedriver                        0x00000001011cd230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:38:51,195 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x0000000104ce78ac chromedriver + 4257964
+1   chromedriver                        0x0000000104cdff40 chromedriver + 4226880
+2   chromedriver                        0x000000010491c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000104957a34 chromedriver + 522804
+4   chromedriver                        0x000000010494d1cc chromedriver + 479692
+5   chromedriver                        0x000000010498e7e4 chromedriver + 747492
+6   chromedriver                        0x000000010494b98c chromedriver + 473484
+7   chromedriver                        0x000000010494c98c chromedriver + 477580
+8   chromedriver                        0x0000000104ca6900 chromedriver + 3991808
+9   chromedriver                        0x0000000104caa354 chromedriver + 4006740
+10  chromedriver                        0x0000000104caa940 chromedriver + 4008256
+11  chromedriver                        0x0000000104cb033c chromedriver + 4031292
+12  chromedriver                        0x0000000104caaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000104c83490 chromedriver + 3847312
+14  chromedriver                        0x0000000104cc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000104cc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000104cd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:38:51,236 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x0000000104ce78ac chromedriver + 4257964
+1   chromedriver                        0x0000000104cdff40 chromedriver + 4226880
+2   chromedriver                        0x000000010491c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000104957a34 chromedriver + 522804
+4   chromedriver                        0x000000010494d1cc chromedriver + 479692
+5   chromedriver                        0x000000010498e7e4 chromedriver + 747492
+6   chromedriver                        0x000000010494b98c chromedriver + 473484
+7   chromedriver                        0x000000010494c98c chromedriver + 477580
+8   chromedriver                        0x0000000104ca6900 chromedriver + 3991808
+9   chromedriver                        0x0000000104caa354 chromedriver + 4006740
+10  chromedriver                        0x0000000104caa940 chromedriver + 4008256
+11  chromedriver                        0x0000000104cb033c chromedriver + 4031292
+12  chromedriver                        0x0000000104caaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000104c83490 chromedriver + 3847312
+14  chromedriver                        0x0000000104cc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000104cc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000104cd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:38:51,279 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x0000000104ce78ac chromedriver + 4257964
+1   chromedriver                        0x0000000104cdff40 chromedriver + 4226880
+2   chromedriver                        0x000000010491c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000104957a34 chromedriver + 522804
+4   chromedriver                        0x000000010494d1cc chromedriver + 479692
+5   chromedriver                        0x000000010498e7e4 chromedriver + 747492
+6   chromedriver                        0x000000010494b98c chromedriver + 473484
+7   chromedriver                        0x000000010494c98c chromedriver + 477580
+8   chromedriver                        0x0000000104ca6900 chromedriver + 3991808
+9   chromedriver                        0x0000000104caa354 chromedriver + 4006740
+10  chromedriver                        0x0000000104caa940 chromedriver + 4008256
+11  chromedriver                        0x0000000104cb033c chromedriver + 4031292
+12  chromedriver                        0x0000000104caaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000104c83490 chromedriver + 3847312
+14  chromedriver                        0x0000000104cc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000104cc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000104cd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range
+2023-05-23 09:38:51,319 - Exception in post
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 97, in scarpe_and_stat
+    repost_check=post.find_element(By.CSS_SELECTOR,'.update-components-header__text-view')
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 425, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "/Users/dnsn/Documents/stat_learn_project/insight_scraper_slack_github_working_dir/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".update-components-header__text-view"}
+  (Session info: headless chrome=113.0.5672.126)
+Stacktrace:
+0   chromedriver                        0x0000000104ce78ac chromedriver + 4257964
+1   chromedriver                        0x0000000104cdff40 chromedriver + 4226880
+2   chromedriver                        0x000000010491c9d4 chromedriver + 281044
+3   chromedriver                        0x0000000104957a34 chromedriver + 522804
+4   chromedriver                        0x000000010494d1cc chromedriver + 479692
+5   chromedriver                        0x000000010498e7e4 chromedriver + 747492
+6   chromedriver                        0x000000010494b98c chromedriver + 473484
+7   chromedriver                        0x000000010494c98c chromedriver + 477580
+8   chromedriver                        0x0000000104ca6900 chromedriver + 3991808
+9   chromedriver                        0x0000000104caa354 chromedriver + 4006740
+10  chromedriver                        0x0000000104caa940 chromedriver + 4008256
+11  chromedriver                        0x0000000104cb033c chromedriver + 4031292
+12  chromedriver                        0x0000000104caaf34 chromedriver + 4009780
+13  chromedriver                        0x0000000104c83490 chromedriver + 3847312
+14  chromedriver                        0x0000000104cc89f4 chromedriver + 4131316
+15  chromedriver                        0x0000000104cc8b4c chromedriver + 4131660
+16  chromedriver                        0x0000000104cd9230 chromedriver + 4198960
+17  libsystem_pthread.dylib             0x000000019b0bd240 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000019b0b8024 thread_start + 8
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dnsn/Documents/insight_scraper_slack_github_working_dir/scrapeHandler.py", line 108, in scarpe_and_stat
+    date_clear_text = re.findall(r"\d+[hwdm]o?", date_wrap)[0]
+IndexError: list index out of range

@@ -94,16 +94,16 @@ def com(msg, typ='INFO', log=True, logfile='mainLOG.log', contact_admin=False, c
 
 def check_link(link):
     if link[0:28] != 'https://www.linkedin.com/in/':
-        return 'LINK FORMATTING ERROR [ link does not start correctly ] \n\n Check pinned messages for HELP'
+        return ':zap: LINK FORMATTING ERROR ```link does not start correctly``` \n\n _Check pinned messages for HELP_'
 
     elif 'recent-activity' in link:
-        return 'LINK FORMATTING ERROR [ remove "recent-activity" from link ] \n\n Check pinned messages for HELP'
+        return ':zap: LINK FORMATTING ERROR ```remove "recent-activity" from link``` \n\n _Check pinned messages for HELP_'
 
     elif link[-1] != '/':
-        return 'LINK FORMATTING ERROR [ links NEED to end in "/" to ensure functionality ] \n\n Check pinned messages for HELP'
+        return ':zap: LINK FORMATTING ERROR ```links NEED to end in "/" to ensure functionality``` \n\n _Check pinned messages for HELP_'
 
     elif link.count('/') != 5:
-        return 'LINK FORMATTING ERROR [ slash count out of range ] \n\n Check pinned messages for HELP'
+        return ':zap: LINK FORMATTING ERROR ```slash count out of range``` \n\n _Check pinned messages for HELP_'
 
     else:
         return True
