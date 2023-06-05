@@ -2,7 +2,7 @@ from scrapeHandler import *
 from communicationHandler import *
 from jinja2 import Template
 
-active_channel =test_channel
+active_channel = live_channel
 
 
 
@@ -46,7 +46,7 @@ try:
                         tables=[result['mip'].to_html(classes='data', header="true", index=False)],
                         pp_url=result['pp_url'])
 
-                    base_output=f"{result['user_name']}'s KPI \n Follower: {result['followers']} \n Posts per week: {np.round(result['posts_in_tf']/12,2)} \n Likes(avg): {result['avg_likes']} \n Comments(avg): {result['avg_comments']} \n Post range: {result['first_post']} - {result['last_post']}"
+                    base_output=f"{result['user_name']}'s KPI \n |->Follower: {result['followers']} \n |->Posts per week: {np.round(result['posts_in_tf']/12,2)} \n |->Likes(avg): {result['avg_likes']} \n |->Comments(avg): {result['avg_comments']} \n '->Post range: {result['first_post']} - {result['last_post']}"
 
 
                     file_name = 'html_saves/' + result['user_name'] + ' ' + str(datetime.datetime.now())[:10] + '.html'
@@ -66,7 +66,7 @@ try:
 
 except  Exception as e_main:
     #print(e_main ,'outer-except-trigger')
-    client.chat_postMessage(channel=admin_channel, text=f'~FULL FAILURE~ \n {e}')
+    client.chat_postMessage(channel=admin_channel, text=f'~FULL FAILURE~ \n {e_main}')
 
 
 

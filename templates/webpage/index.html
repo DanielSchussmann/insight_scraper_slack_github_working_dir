@@ -81,3 +81,17 @@
 </body>
 
 </html>
+
+
+=WENN(
+    WENN(REST(SUMME($D$90:D99);
+    'Eingabe-Maske'!$B$21)=0;
+    KÜRZEN(SUMME($D$90:D99) / 'Eingabe-Maske'!$B$21);
+
+    KÜRZEN(SUMME($D$90:D99)/'Eingabe-Maske'!$B$21)+1)=1;
+    KALENDERWOCHE('Eingabe-Maske'!$C$21);
+    KALENDERWOCHE('Eingabe-Maske'!$C$21)+WENN(REST(SUMME($D$90:D99);
+    'Eingabe-Maske'!$B$21)=0;
+    KÜRZEN(SUMME($D$90:D99)/'Eingabe-Maske'!$B$21);
+    KÜRZEN(SUMME($D$90:D99)/'Eingabe-Maske'!$B$21)+1)
+)

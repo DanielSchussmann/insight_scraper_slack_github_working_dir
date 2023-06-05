@@ -43,7 +43,7 @@ def scarpe_and_stat(link,bypass = False):
 
 
     un_pp_parent = driver.find_element(By.CSS_SELECTOR,'.ember-view.relative')
-    user_name = un_pp_parent.find_element(By.TAG_NAME,'img').get_attribute('alt')#driver.find_element(By.CSS_SELECTOR, 'break-words.ph5.pv0').find_elements(By.TAG_NAME,'h3').text
+    user_name = re.sub(r'[^a-zA-Z\s]', '',un_pp_parent.find_element(By.TAG_NAME,'img').get_attribute('alt'))#driver.find_element(By.CSS_SELECTOR, 'break-words.ph5.pv0').find_elements(By.TAG_NAME,'h3').text
     pp_url  = un_pp_parent.find_element(By.TAG_NAME,'img').get_attribute('src')#driver.find_element(By.CSS_SELECTOR,'.ghost-person.ember-view.pv-recent-activity-top-card__member-photo.EntityPhoto-circle-5').get_attribute('src')
     followers = driver.find_element(By.CSS_SELECTOR, '.pv-recent-activity-top-card__extra-info.pr4.pl4').find_elements(By.TAG_NAME,'div')[2].text
 
@@ -100,7 +100,7 @@ def scarpe_and_stat(link,bypass = False):
                 except:
                     try:
                         com(post.find_elements(By.TAG_NAME, 'div')[0])
-                        urn = post.find_element(By.CSS_SELECTOR,'.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
+                        urn = post.find_elements(By.CSS_SELECTOR, "[data-urn]")[0].get_attribute('data-urn')#.find_elements(By.TAG_NAME,'div')[0].get_attribute('data-urn')#.feed-shared-update-v2.feed-shared-update-v2--minimal-padding.full-height.relative.feed-shared-update-v2--e2e.artdeco-card  ').get_attribute('data-urn')
                         com('CURRENT URN' + str(urn))
 
                         pre_date =  post.find_element(By.CSS_SELECTOR,'.update-components-text-view.break-words') #re.findall(r"\d+[hwdmy]o?", post.get_attribute('innerHTML'))[0] #
@@ -134,7 +134,8 @@ def scarpe_and_stat(link,bypass = False):
 
                                 com('passed lcr value:' + lcr.get_attribute('innerHTML'))
                                 likes = int(lcr.get_attribute('innerHTML').replace(',',''))"""
-                    except:
+                    except Exception as e_post:
+                        com("\x1b[31;20m" + f'Exception in post() \n {e_post}' + "\x1b[0m" )
                         com('Exception in post','ERROR')
                         continue
 
@@ -172,8 +173,8 @@ def scarpe_and_stat(link,bypass = False):
             com('BOT scroll OK')
             # button.click()
             time.sleep(2)
-        except Exception as e1:
-            com(e1,typ='ERROR')
+        except Exception as e_scroll:
+            com(e_scroll,typ='ERROR')
             pass
 
 
